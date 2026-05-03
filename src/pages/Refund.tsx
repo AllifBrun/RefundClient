@@ -7,7 +7,7 @@ import fileSvg from "../assets/file.svg";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import { CATEGORIES, CATEGORIES_KEYS } from "../utils/categories";
-import { file, z, ZodError } from "zod";
+import { z, ZodError } from "zod";
 import { api } from "../services/api";
 import { AxiosError } from "axios";
 import { formatCurrency } from "../utils/formatCurrency";

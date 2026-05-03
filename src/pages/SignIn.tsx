@@ -3,7 +3,7 @@ import { Button } from "../components/Button";
 import { useActionState } from "react";
 import { z, ZodError } from "zod";
 import { api } from "../services/api";
-import { Axios, AxiosError } from "axios";
+import { AxiosError } from "axios";
 import { useAuth } from "../hooks/useAuth";
 
 const signInScheme = z.object({
