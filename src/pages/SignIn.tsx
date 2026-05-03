@@ -1,5 +1,6 @@
 import { Input } from "../components/Input";
 import { Button } from "../components/Button";
+import { Link } from "react-router";
 import { useActionState } from "react";
 import { z, ZodError } from "zod";
 import { api } from "../services/api";
@@ -67,12 +68,12 @@ export function SignIn() {
         Entrar
       </Button>
 
-      <a
-        href="/signup"
+      <Link
+        to="/signup"
         className="mt-6 md:mt-8 text-sm flex justify-center text-green-100 hover:text-green-800 font-semibold transition ease-linear"
       >
         Criar conta
-      </a>
+      </Link>
     </form>
   );
 }
