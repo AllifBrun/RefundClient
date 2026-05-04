@@ -2,6 +2,7 @@ import { Select } from "../components/Select";
 import { Upload } from "../components/Upload";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
+import { Link } from "react-router";
 
 import fileSvg from "../assets/file.svg";
 import { useEffect, useState } from "react";
@@ -159,14 +160,14 @@ export function Refund() {
       </div>
 
       {params.id && fileURL ? (
-        <a
+        <Link
           target="_blank"
-          href={`${API_URL}uploads/${fileURL}`}
+          to={`${API_URL}uploads/${fileURL}`}
           className="text-sm text-green-100 font-semibold flex items-center justify-center gap-2 my-6 hover:opacity-70 transition ease-linear"
         >
           <img src={fileSvg} alt="Ícone de arquivo" />
           Abrir comprovante
-        </a>
+        </Link>
       ) : (
         <Upload
           filename={file && file.name}
