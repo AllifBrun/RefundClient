@@ -11,7 +11,7 @@ import { formatCurrency } from "../utils/formatCurrency";
 import { api } from "../services/api";
 import { AxiosError } from "axios";
 
-const PER_PAGE = 2;
+const PER_PAGE = 5;
 
 export function Dashboard() {
   const [name, setName] = useState("");
