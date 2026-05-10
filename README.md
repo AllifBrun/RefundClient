@@ -75,9 +75,3 @@ npm run dev
 - `npm run preview` — pré-visualiza a build
 - `npm run lint` — roda o lint no código
 
-## Melhorias possíveis
-
-- adicionar tratamento de erros mais robusto e notificações visuais
-- implementar logout direto pelo layout da aplicação
-- adicionar testes automatizados
-- suportar edição de solicitações existentes para usuários que ainda não enviaram comprovantes
